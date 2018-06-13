@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+
+        <Button
+            android:id="@+id/dobleTiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/glGameBoard"
+            android:layout_alignTop="@+id/tvInfo"
+            android:background="#ab47bc"
+            android:drawableEnd="@drawable/round_fast_forward_white_18dp"
+            android:padding="3dp"
+            android:shape="oval"
+            android:text="Doble Tiro"
+            android:textColor="#ffff"
+            android:textSize="5pt" />
+
+        <Button
+            android:id="@+id/reemplazo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/glGameBoard"
+            android:layout_alignTop="@+id/tvInfo"
+            android:background="#66bb6a"
+            android:drawableEnd="@drawable/round_sync_white_18dp"
+            android:padding="3dp"
+            android:text="Reemplazo"
+            android:textColor="#ffff"
+            android:textSize="5pt" />
+
+        <!--TextView to show user na,e -->
+        <TextView
+            android:id="@+id/nombreUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/glGameBoard"
+            android:layout_centerHorizontal="true"
+            android:padding="8dp"
+            android:textColor="#424242"
+            android:textSize="18sp" />
+
+        <!--Table Layout with 3 rows and each row with 3 buttons-->
+        <TableLayout
+            android:id="@+id/glGameBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:columnCount="3"
+            android:padding="8dp"
+            android:rowCount="3">
+
+            <!--Row 1-->
+            <TableRow>
+
+                <Button
+                    android:id="@+id/b00"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/b01"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/b02"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+            </TableRow>
+
+            <!--Row 2-->
+            <TableRow>
+
+                <Button
+                    android:id="@+id/b10"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/b11"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/b12"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+            </TableRow>
+
+            <!--Row 3-->
+            <TableRow>
+
+                <Button
+                    android:id="@+id/b20"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/b21"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/b22"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <!--TextView to show user turns and winner-->
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:padding="8dp"
+            android:textColor="#424242"
+            android:textSize="18sp" />
+
+        <!--Button to reset game board-->
+        <Button
+            android:id="@+id/SalirJuego"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="37dp"
+            android:background="@color/colorPrimary"
+            android:padding="8dp"
+            android:text="SALIR"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

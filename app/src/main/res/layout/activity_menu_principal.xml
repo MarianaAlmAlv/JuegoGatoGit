@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPrincipal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,UselessParent"
+        tools:layout_editor_absoluteY="119dp"
+        android:layout_width="match_parent">
+
+
+       <!-- <Button
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/button_maquina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#26a69a"
+            android:text="Contra la maquina"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints,UselessParent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="75dp" />-->
+
+        <Button
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/button_uno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#29b6f6"
+            android:text="Contra otro Jugador"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints,UselessParent"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="172dp"
+
+            />
+
+        <Button
+            android:layout_marginBottom="25dp"
+            android:id="@+id/button_estadisticas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Estadisticas"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints,UselessParent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="275dp" />
+
+        <Button
+            android:id="@+id/button_salir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dd2c00"
+            android:text="Salir"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints,UselessParent"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="369dp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
